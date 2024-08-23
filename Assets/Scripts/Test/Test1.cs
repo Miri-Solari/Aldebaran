@@ -4,17 +4,20 @@ using UnityEngine;
 
 public class Test1 : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] Engine engine;
+    [SerializeField] bool IsGiveDMG;
+    [SerializeField] Transform centre;
+
+    private void Start()
     {
-        Rigidbody rb = GetComponent<Rigidbody>();
-        rb.velocity = new Vector3(0,0, -1);
-
+        transform.RotateAround(centre.position ,Vector3.forward, 90);
     }
-
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    //void Update()
+    //{
+    //    if (IsGiveDMG)
+    //    {
+    //        engine.TakeDamage(1);
+    //    }
+    //}
 }
