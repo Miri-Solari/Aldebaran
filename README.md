@@ -1,1 +1,1 @@
-Mechanic for Cosmo RTS
+Mechanic for Cosmic RTS
